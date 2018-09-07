@@ -7,9 +7,11 @@ echo #               2016               #
 echo ####################################
 echo.
 echo.
+echo ###################################################
 echo ESTE ARCHIVO .BAT VERIFICARA EL NUMERO DE LICENCIA
 echo OFFICE 2016 INSTALADO EN EL EQUIPO
 echo INDICAR VERSION DE MAQUINA
+echo ###################################################
 pause
 cls
 :MENU
@@ -24,9 +26,8 @@ set option=
 set /p opcion=
 if (%opcion%)==(1) goto Re1
 if (%opcion%)==(2) goto Re2
-REM if NOT(%opcion%)==(1) goto Re3
-REM if NOT(%opcion%)==(2) goto Re3
 if (%opcion%)==(3) goto Salir
+if (%opcion%)NEQ(1) goto Re3
 
 :Re1
 	echo Re1 PRUEBA BUENA
