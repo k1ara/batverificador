@@ -21,13 +21,10 @@ echo 1-x64
 echo 2-x86
 echo 3-Salir
 echo ESCRIBIR 1 o 2:
-REM set option=
-
 set /p opcion=
 if (%opcion%)==(1) goto :Re1
 if (%opcion%)==(2) goto :Re2
 if (%opcion%)==(3) goto :Salir
-REM if (%opcion%)NEQ(3) goto :Re3
 echo.
 echo LA OPCION ESCRITA NO SE ENCUENTRA. PURUEBE NUEVAMENTE.
 pause
@@ -45,10 +42,5 @@ REM	cscript "C:\Archivos de Programa (x86)\Microsoft Office\Office16\OSPP.VBS" /
 REM	cscript "C:\Program Files (x86)\Microsoft Office\Office16\OSPP.VBS" /dstatus	
 	pause
 	goto :MENU
-REM:Re3
-	REM echo LA OPCION ESCRITA NO SE ENCUENTRA.
-	REM echo INTENTAR NUEVAMENTE.
-	REM pause
-	REM goto :MENU
 :Salir
 	exit
