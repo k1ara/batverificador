@@ -33,7 +33,6 @@ goto :MENU
 
 :Re1
 	cscript "C:\Program Files (x86)\Microsoft Office\Office16\OSPP.VBS" \dstatus
-	cscript "C:\Program Files (x86)\Microsoft Office\Office16\OSPP.VBS" \dstatus
 	pause
 	goto :MENU
 :Re2
